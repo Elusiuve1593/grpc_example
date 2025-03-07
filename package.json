@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-   "migration:generate": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate -d ./src/db/data-source.ts ./src/db/migrations/migration",
+    "migration:generate": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate -d ./src/db/data-source.ts ./src/db/migrations/migration",
     "migration:create": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:create -d ./src/db/data-source.ts ./src/db/migrations/migration",
     "migration:run": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:run -d ./src/db/data-source.ts",
     "migration:revert": "npx ts-node -P ./tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:revert -d ./src/db/data-source.ts",
@@ -36,6 +36,7 @@
     "class-validator": "^0.14.1",
     "env": "^0.0.2",
     "grpc": "^1.24.11",
+    "grpc-tools": "^1.13.0",
     "pg": "^8.13.3",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",

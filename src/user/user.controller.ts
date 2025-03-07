@@ -18,7 +18,7 @@ export class UserController {
   }
 
   @GrpcMethod('UserService', 'GetAllUsers')
-  getAllUsers() {
-    return this.userService.getAllUsers();
+  async getAllUsers() {
+    return { users: await this.userService.getAllUsers() };
   }
 }
